@@ -1,0 +1,24 @@
+// For format details, see https://aka.ms/devcontainer.json. For config options, see the README at:
+// https://github.com/microsoft/vscode-dev-containers/tree/v0.217.4/containers/docker-existing-dockerfile
+{
+	"name": "CPP Stages",
+	"build": {
+		"context": "..",
+		"dockerfile": "../Dockerfile",
+		"target": "dev",
+		"args": {
+			"GTSAM_VERSION": "4.1.1",
+			"OS": "ubuntu:20.04"
+		}
+	},
+	// Set *default* container specific settings.json values on container create.
+	"settings": {
+		"C_Cpp.clang_format_style": "Google",
+		"C_Cpp.clang_format_fallbackStyle": "none"
+	},
+	// Add the IDs of extensions you want installed when the container is created.
+	"extensions": [
+		"ms-vscode.cpptools",
+		"ms-vscode.cmake-tools"
+	],
+}
