@@ -17,7 +17,7 @@ In thinking through how this template should work, there were a number of requir
 Given that list, I developed the setup shown in the image below. Solid lines between stages indicate a direct dependency
 (i.e. `FROM stage1 AS stage2`) The dashed line indicates a copy of files from one stage to the next.
 
-![stages](/assets/images/Stages.png){: width="250"}
+![stages](stages.png "Stages")
 
 To better illustrate this, I also put together the example project found
 [at this GitHub repository](https://github.com/kylerobots/docker-cpp-stages). In addition to the Docker files, it
